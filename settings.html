@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriConnect - Settings</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+
+  <!-- ===== HEADER (logo sa kaliwa, user sa kanan) ===== -->
+  <header class="navbar">
+    <a href="index.html" class="logo">
+      <img src="/images/OIP (7).webp" alt="AgriConnect logo">
+      <div><b>AgriConnect</b><small>Farmers-Fresh Crops-Better Tomorrow</small></div>
+    </a>
+    <div class="user-box"><span class="avatar">👤</span><div>mang kanor<small>farmer</small></div> ↓</div>
+  </header>
+
+  <div class="dash-layout">
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="menu">
+      <h2>Fresh Crops</h2>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="#">My Crops</a>
+      <a href="orders.html">Orders</a>
+      <a href="messages.html">Messages</a>
+      <a href="#">Profile</a>
+      <a href="settings.html" class="current">Settings</a>
+    </aside>
+
+    <!-- ===== MAIN: ang mga settings ===== -->
+    <main class="main">
+      <h2>Settings</h2>
+
+      <!-- 1. Profile -->
+      <section class="box">
+        <h3>Profile Information</h3>
+        <div class="photo-row">
+          <span class="avatar">👤</span>
+          <a href="#" class="btn btn-outline" style="padding:6px 20px; font-size:13px">Change photo</a>
+        </div>
+        <div class="field"><label>Full name</label><input type="text" value="mang kanor"></div>
+        <div class="field"><label>Email</label><input type="email" placeholder="email"></div>
+        <div class="field"><label>Phone number</label><input type="text" placeholder="09XX XXX XXXX"></div>
+        <div class="field"><label>Location</label><input type="text" value="Mamburao, occ, Mindoro"></div>
+      </section>
+
+      <!-- 2. Password -->
+      <section class="box">
+        <h3>Change Password</h3>
+        <div class="field"><label>Current password</label><input type="password"></div>
+        <div class="field"><label>New password</label><input type="password"></div>
+        <div class="field"><label>Confirm new password</label><input type="password"></div>
+      </section>
+
+      <!-- 3. Notifications -->
+      <section class="box">
+        <h3>Notifications</h3>
+        <label class="option">New order alerts <input type="checkbox" checked></label>
+        <label class="option">Message alerts <input type="checkbox" checked></label>
+        <label class="option">Email updates <input type="checkbox"></label>
+      </section>
+
+      <!-- Mga pindutan sa baba -->
+      <div class="button-row">
+        <a href="dashboard.html" class="btn">Save changes</a>
+        <a href="login.html" class="btn btn-outline">Logout</a>
+        <a href="#" class="btn btn-danger">Delete account</a>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

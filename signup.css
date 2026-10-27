@@ -1,0 +1,50 @@
+/* signup.css - styles para sa signup.html lang */
+
+/* ---------- 1. BASICS ---------- */
+/* Colors are saved as variables so you can change them in one place */
+:root {
+  --green: #006837;
+  --light-green: #dff5e5;
+  --lime: #b5e655;
+  --dark: #222;
+  --gray: #d9d9d9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Quicksand', Arial, sans-serif; color: var(--dark); background: #fff; }
+a { text-decoration: none; color: inherit; }
+h1, h2, h3, .title, .nav-links a, .btn { font-family: 'Lilita One', Arial, sans-serif; }
+
+/* Green rounded button used everywhere */
+.btn {
+  display: inline-block; background: var(--green); color: #fff;
+  padding: 10px 40px; border-radius: 12px; border: none;
+  cursor: pointer; font-size: 16px; text-align: center;
+}
+.btn-outline { background: #fff; color: #000; border: 2px solid #000; }
+
+/* ---------- 7. LOGIN & SIGN UP ---------- */
+.auth { display: flex; min-height: 640px; }
+.auth-left {
+  width: 340px; background: url('images/farm-bg.jpg') center / cover;
+  border-right: 3px solid #000; text-align: center; padding-top: 150px; color: #5a0f14; font-size: 24px;
+}
+.auth-left .brand { font-family: 'Lilita One'; font-style: italic; font-size: 34px; color: var(--green); }
+.auth-right { flex: 1; text-align: center; padding: 50px 120px; }
+.auth-right h1 { color: var(--green); font-size: 56px; margin-bottom: 40px; font-family: Arial; }
+.input-box {
+  display: flex; align-items: center; gap: 12px; background: var(--light-green);
+  border-radius: 15px; padding: 15px; margin: 0 auto 28px; width: 410px; font-size: 18px;
+}
+.input-box input { border: none; background: transparent; outline: none; width: 100%; font-size: 15px; }
+.auth-right .btn { width: 100%; max-width: 505px; }
+.divider { display: flex; align-items: center; justify-content: center; gap: 40px; margin: 25px 0; font-family: 'Lilita One'; color: #5a0f14; }
+.divider hr { width: 150px; border: 1px solid #000; }
+.google { font-size: 22px; }
+.small-text { font-size: 13px; margin-top: 5px; }
+.small-text a { text-decoration: underline; }
+/* "I am a farmer / I am a buyer" choice buttons */
+.role-buttons { display: flex; justify-content: center; gap: 5px; margin-bottom: 15px; }
+.role-buttons a {
+  background: var(--light-green); border: 2px solid #666; border-radius: 12px;
+  padding: 6px 25px; font-family: 'Lilita One'; font-size: 12px;
+}

@@ -1,0 +1,72 @@
+/* orders.css - styles para sa orders.html lang */
+
+/* ---------- 1. BASICS ---------- */
+/* Colors are saved as variables so you can change them in one place */
+:root {
+  --green: #006837;
+  --light-green: #dff5e5;
+  --lime: #b5e655;
+  --dark: #222;
+  --gray: #d9d9d9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Quicksand', Arial, sans-serif; color: var(--dark); background: #fff; }
+a { text-decoration: none; color: inherit; }
+h1, h2, h3, .title, .nav-links a, .btn { font-family: 'Lilita One', Arial, sans-serif; }
+
+/* Green rounded button used everywhere */
+.btn {
+  display: inline-block; background: var(--green); color: #fff;
+  padding: 10px 40px; border-radius: 12px; border: none;
+  cursor: pointer; font-size: 16px; text-align: center;
+}
+.btn-outline { background: #fff; color: #000; border: 2px solid #000; }
+
+/* ---------- 2. HEADER (top bar) ---------- */
+.navbar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 30px; border-bottom: 2px solid #bbb; background: #fff;
+}
+.logo { display: flex; align-items: center; gap: 8px; }
+.logo img { width: 60px; }
+.logo b { display: block; font-family: 'Lilita One'; font-size: 20px; color: var(--green); }
+.logo small { font-size: 9px; font-weight: bold; color: var(--green); }
+.nav-links { display: flex; gap: 25px; }
+.nav-links a { color: var(--green); font-size: 15px; }
+.nav-icons { display: flex; gap: 18px; font-size: 22px; }
+/* user box on the right (farmer pages) */
+.user-box { display: flex; align-items: center; gap: 10px; font-family: 'Lilita One'; }
+.user-box small { display: block; font-size: 12px; }
+.user-box .avatar { font-size: 38px; }
+
+/* ---------- 8. FARMER DASHBOARD ---------- */
+.dash-layout { display: flex; min-height: 580px; }
+.menu { width: 325px; border-right: 3px solid #bbb; padding: 25px 15px; }
+.menu h2 { font-size: 26px; font-weight: normal; margin: 0 0 15px 10px; }
+.menu .active { display: block; background: var(--green); color: #fff; padding: 15px 70px; border-radius: 12px; font-family: 'Lilita One'; font-size: 20px; margin-bottom: 15px; text-align: center; }
+.menu a { display: block; font-family: 'Lilita One'; font-size: 13px; padding: 5px 0 5px 65px; }
+.main { flex: 1; padding: 15px 20px; }
+.main h2 { font-weight: normal; font-size: 20px; }
+.stats { display: flex; gap: 40px; align-items: center; margin: 5px 0 20px 15px; }
+.stat { background: var(--gray); border-radius: 15px; padding: 8px 30px; text-align: center; font-family: 'Lilita One'; color: #5a0f14; }
+.stat b { display: block; color: #000; font-size: 18px; font-weight: normal; }
+.stat.orange { color: #d4960a; } .stat.orange b { color: #d4960a; }
+.table-row { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr 1fr; align-items: center; padding: 8px 0; font-family: 'Lilita One'; color: var(--green); font-size: 18px; text-align: center; }
+.table-head { font-size: 16px; }
+.table-row .item { display: flex; align-items: center; gap: 10px; text-align: left; }
+.table-row .item img { width: 100px; height: 65px; object-fit: cover; border-radius: 18px; }
+.status { background: var(--gray); border-radius: 12px; padding: 3px 10px; }
+.edit { color: #000; font-size: 13px; } .delete { color: #c0242b; font-size: 13px; }
+
+/* ---------- 9. MY ORDERS ---------- */
+.tabs { display: flex; gap: 70px; margin: 25px 0 5px 0; font-family: 'Lilita One'; color: var(--green); font-size: 18px; }
+.tabs .on { background: var(--green); color: #fff; padding: 3px 30px; border-radius: 20px; }
+.order { display: grid; grid-template-columns: 2.2fr 1.2fr 1fr; align-items: center; padding: 15px 0; }
+.order .item { display: flex; gap: 12px; align-items: center; font-family: 'Lilita One'; color: var(--green); }
+.order .item img { width: 100px; height: 95px; object-fit: cover; border-radius: 20px; }
+.order .item h3 { font-weight: normal; font-size: 20px; }
+.order .item small { color: #222; font-family: 'Quicksand'; font-size: 11px; }
+.order .date { display: block; margin-top: 15px; font-family: 'Lilita One'; color: var(--green); font-size: 18px; }
+.badge { background: var(--gray); padding: 3px 18px; border-radius: 10px; font-family: 'Lilita One'; color: var(--green); }
+.badge.pending { color: #c0242b; }
+.btn-details { border: 1px solid #000; border-radius: 20px; padding: 6px 40px; font-size: 18px; font-family: Arial; }

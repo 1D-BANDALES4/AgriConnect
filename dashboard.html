@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriConnect - Farmer Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">
+      <img src="/images/OIP (7).webp" alt="AgriConnect logo">
+      <div><b>AgriConnect</b><small>Farmers-Fresh Crops-Better Tomorrow</small></div>
+    </a>
+    <div class="user-box"><span class="avatar">👤</span><div>mang kanor<small>farmer</small></div> ↓</div>
+  </header>
+  <div class="dash-layout">
+    <aside class="menu">
+      <h2>Fresh Crops</h2>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="#">My Crops</a><a href="orders.html">Orders</a><a href="messages.html">Messages</a>
+      <a href="#">Profile</a><a href="#">Settings</a>
+    </aside>
+    <main class="main">
+      <h2>Farmer Dashboard</h2>
+      <div class="stats">
+        <div class="stat">Total products<b>5</b></div>
+        <div class="stat">total amount<b>12</b></div>
+        <div class="stat orange">Pending orders<b>3</b></div>
+        <a href="#" class="btn" style="padding:6px 15px; border-radius:20px">add new products</a>
+      </div>
+      <div class="table-row table-head"><div>product</div><div>price</div><div>Quantity</div><div>status</div><div>action</div></div>
+      <div class="table-row">
+        <div class="item"><img src="/images/Bananas.webp" alt="banana"> banana</div>
+        <div>40₱</div><div>50kg</div><div><span class="status">🔔 availabe</span></div>
+        <div><a href="#" class="edit">Edit</a> &nbsp; <a href="#" class="delete">delete</a></div>
+      </div>
+      <div class="table-row">
+        <div class="item"><img src="/images/OIP (3).webp" alt="cucumber"> cucumber</div>
+        <div>80₱</div><div>30kg</div><div><span class="status">🔔 availabe</span></div>
+        <div><a href="#" class="edit">Edit</a> &nbsp; <a href="#" class="delete">delete</a></div>
+      </div>
+      <div class="table-row">
+        <div class="item"><img src="/images/OIP (4).webp" alt="eggplant"> eggplant</div>
+        <div>80₱</div><div>30kg</div><div><span class="status">🔔 availabe</span></div>
+        <div><a href="#" class="edit">Edit</a> &nbsp; <a href="#" class="delete">delete</a></div>
+      </div>
+      <div class="table-row">
+        <div class="item"><img src="/images/OIP (5).webp" alt="string beans"> string beans</div>
+        <div>100₱</div><div>40kg</div><div><span class="status">🔔 availabe</span></div>
+        <div><a href="#" class="edit">Edit</a> &nbsp; <a href="#" class="delete">delete</a></div>
+      </div>
+      <div class="table-row">
+        <div class="item"><img src="/images/GettyImages-127741243-5892285b3df78caebc8da2e8.jpg" alt="water melon"> water melon</div>
+        <div>150₱</div><div>20kg</div><div><span class="status">🔔 availabe</span></div>
+        <div><a href="#" class="edit">Edit</a> &nbsp; <a href="#" class="delete">delete</a></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+/* messages.css - styles para sa messages.html lang */
+
+/* ---------- 1. BASICS ---------- */
+/* Colors are saved as variables so you can change them in one place */
+:root {
+  --green: #006837;
+  --light-green: #dff5e5;
+  --lime: #b5e655;
+  --dark: #222;
+  --gray: #d9d9d9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Quicksand', Arial, sans-serif; color: var(--dark); background: #fff; }
+a { text-decoration: none; color: inherit; }
+h1, h2, h3, .title, .nav-links a, .btn { font-family: 'Lilita One', Arial, sans-serif; }
+
+/* Green rounded button used everywhere */
+.btn {
+  display: inline-block; background: var(--green); color: #fff;
+  padding: 10px 40px; border-radius: 12px; border: none;
+  cursor: pointer; font-size: 16px; text-align: center;
+}
+.btn-outline { background: #fff; color: #000; border: 2px solid #000; }
+
+/* ---------- 10. MESSAGES ---------- */
+.chat-title { padding: 12px 20px; font-family: 'Lilita One'; border-bottom: 2px solid #bbb; font-size: 14px; }
+.chat { display: flex; height: 590px; }
+.chat-list { width: 40%; border-right: 2px solid #bbb; overflow: hidden; }
+.person { display: flex; align-items: center; gap: 5px; padding: 6px 10px; }
+.person .pic { font-size: 70px; line-height: 1; }
+.person b { display: block; font-family: Arial; font-size: 30px; }
+.person span { font-size: 18px; }
+.chat-box { flex: 1; position: relative; padding: 15px; }
+.chat-box h3 { font-family: Arial; font-size: 22px; margin-bottom: 25px; }
+.bubble { background: #eee; padding: 25px 40px; width: 300px; font-size: 13px; margin-bottom: 20px; }
+.chat-input { position: absolute; bottom: 15px; left: 15px; right: 15px; display: flex; align-items: center; gap: 10px; font-size: 34px; }
+.chat-input input { flex: 1; height: 32px; background: var(--gray); border: none; border-radius: 20px; padding: 0 15px; }

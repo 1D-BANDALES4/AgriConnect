@@ -1,0 +1,72 @@
+/* index.css - styles para sa index.html lang */
+
+/* ---------- 1. BASICS ---------- */
+/* Colors are saved as variables so you can change them in one place */
+:root {
+  --green: #006837;
+  --light-green: #dff5e5;
+  --lime: #b5e655;
+  --dark: #222;
+  --gray: #d9d9d9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Quicksand', Arial, sans-serif; color: var(--dark); background: #fff; }
+a { text-decoration: none; color: inherit; }
+h1, h2, h3, .title, .nav-links a, .btn { font-family: 'Lilita One', Arial, sans-serif; }
+
+/* Green rounded button used everywhere */
+.btn {
+  display: inline-block; background: var(--green); color: #fff;
+  padding: 10px 40px; border-radius: 12px; border: none;
+  cursor: pointer; font-size: 16px; text-align: center;
+}
+.btn-outline { background: #fff; color: #000; border: 2px solid #000; }
+
+/* ---------- 2. HEADER (top bar) ---------- */
+.navbar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 30px; border-bottom: 2px solid #bbb; background: #fff;
+}
+.logo { display: flex; align-items: center; gap: 8px; }
+.logo img { width: 60px; }
+.logo b { display: block; font-family: 'Lilita One'; font-size: 20px; color: var(--green); }
+.logo small { font-size: 9px; font-weight: bold; color: var(--green); }
+.nav-links { display: flex; gap: 25px; }
+.nav-links a { color: var(--green); font-size: 15px; }
+.nav-icons { display: flex; gap: 18px; font-size: 22px; }
+/* user box on the right (farmer pages) */
+.user-box { display: flex; align-items: center; gap: 10px; font-family: 'Lilita One'; }
+.user-box small { display: block; font-size: 12px; }
+.user-box .avatar { font-size: 38px; }
+
+/* ---------- 3. HOME PAGE ---------- */
+.hero {
+  height: 330px; display: flex; align-items: center; justify-content: space-around;
+  background: url('images/hero.jpg') center / cover;   /* background picture */
+}
+.hero h1 { font-size: 46px; font-style: italic; font-weight: normal; line-height: 1.1; }
+.hero-buttons { display: flex; flex-direction: column; gap: 35px; }
+.hero-buttons a {
+  width: 420px; padding: 12px; text-align: center; color: #fff; font-size: 26px;
+  background: rgba(181, 230, 85, 0.85); border: 3px solid #222; font-family: 'Lilita One';
+}
+/* the 4 icons under the hero */
+.features { display: flex; justify-content: space-around; padding: 15px; }
+.feature { display: flex; align-items: center; gap: 12px; color: var(--green); font-family: 'Lilita One'; }
+.feature span { font-size: 38px; }
+.section-title { color: var(--green); padding: 5px 30px; font-size: 20px; }
+
+/* ---------- 4. CROP CARDS (used on Home, Fresh Crops, Product) ---------- */
+.crop-row { display: flex; justify-content: space-around; padding: 10px 20px 30px; flex-wrap: wrap; gap: 15px; }
+.crop-card { width: 150px; text-align: center; }
+.crop-card img { width: 100%; height: 65px; object-fit: cover; border-radius: 20px; }
+/* white box with a black border under the picture */
+.crop-info {
+  border: 2px solid #222; border-radius: 15px; background: #fff;
+  margin: -5px 5px 8px; padding: 6px 8px; text-align: left; position: relative;
+}
+.crop-info h4 { font-family: 'Lilita One'; font-size: 11px; color: var(--green); font-weight: normal; }
+.crop-info .price { font-family: 'Lilita One'; font-size: 16px; color: var(--green); }
+.crop-info .farmer { font-family: 'Lilita One'; font-size: 10px; color: var(--green); }
+.crop-info .place { font-size: 10px; color: var(--green); }
+.crop-card .btn { padding: 5px 0; width: 90%; font-size: 10px; border-radius: 20px; }
